@@ -1,0 +1,73 @@
+$max_w= 1200px
+$hd_h= 60px
+$fontsize = 13pt
+@font-face
+	font-family: Noto Sans TC
+	font-style: normal
+	src: url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap')
+
+@import '_hf.styl'
+img
+	display: block
+	width: 100%
+	height: auto
+a
+	color: inherit
+	text-decoration: none
+.m
+	display: none
+.pc
+	display: block
+.br
+	font-weight: bolder
+.right
+	text-align: right
+.mid
+	text-align: center
+h1
+	font-size: 3rem
+h2
+	font-size: 2rem
+h3
+	font-size: 1.8rem
+h4
+	font-size: 1.5rem
+p
+	font-size: 1.2rem
+span
+	font-size 1rem
+hr
+	margin 3% auto
+	border: none
+	border-top: 1px solid #fff	
+html, body
+	min-height: 100%
+	height: 100%
+	font-family: Noto Sans TC, Segoe UI, Helvetica, Arial, 'LiHei Pro', '微軟正黑體', '新細明體', sans-serif
+	font-size: $fontsize
+	line-height: 1.5
+#wrapper
+	position: relative
+	width: 100%
+	height: auto
+	min-height: 100%
+	max-width: $max_w
+	margin: 0 auto
+section
+	position: relative
+	width: 100%
+	height: auto
+.flex
+	display: flex
+	align-items: center
+	width: 100%
+	.col
+		flex: 1
+	.col2
+		flex: 2
+	.col3
+		flex: 3
+	.right
+		align-items: right 
+/*------indexx------*/
+@import '_mobile.styl'
