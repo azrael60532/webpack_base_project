@@ -114,7 +114,7 @@ const config = {
                 loader: 'url-loader',
                 options: {
                     limit: 8192,
-                    name: utils.assetsPath('media/[name].[hash:7].[ext]')
+                    // name: utils.assetsPath('media/[name].[hash:7].[ext]')
                 }
             },
             {
@@ -156,6 +156,14 @@ const config = {
         alias: {
             jquery: "jquery/src/jquery"
         }
+    },
+    stats: {
+        builtAt: false,
+        children: false,
+        chunks: false,
+        modules: false,
+        timings: false,
+        version: true // webpack v
     },
     
 };

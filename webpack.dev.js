@@ -6,6 +6,8 @@ function port(minNum, maxNum) {
 module.exports = webpackMerge(commonConfig, {
     mode: 'development',
     devServer: {
-        port: port(8000,9000)
+        port: port(8000,9000),
+        open:true,  
+        hot: true,
     },
 });
